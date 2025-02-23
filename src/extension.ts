@@ -1,7 +1,7 @@
 /*
  * @Date: 2025-02-23 12:24:12
  * @LastEditors: shawn
- * @LastEditTime: 2025-02-23 21:13:30
+ * @LastEditTime: 2025-02-24 07:37:19
  */
 import * as vscode from "vscode";
 import * as path from "path";
@@ -120,14 +120,14 @@ function getViewTemplate(pageName: string): string {
 import 'package:get/get.dart';
 import '${pageName}_logic.dart';
 
-class ${className}View extends GetView<${className}Logic> {
-  const ${className}View({super.key});
+class ${className}Page extends GetView<${className}Logic> {
+  const ${className}Page({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('${toTitleCase(pageName)}')),
-      body: const Center(child: Text('${className} View')),
+      appBar: AppBar(title: Text('${toTitleCase(pageName)} Page')),
+      body: const Center(child: Text('${className} Page')),
     );
   }
 }

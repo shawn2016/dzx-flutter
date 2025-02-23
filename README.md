@@ -1,7 +1,7 @@
 <!--
  * @Date: 2025-02-23 12:24:12
  * @LastEditors: shawn
- * @LastEditTime: 2025-02-23 20:59:14
+ * @LastEditTime: 2025-02-24 07:38:09
 -->
 
 # [zx] Flutter GetX 文件生成工具
@@ -54,14 +54,14 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'user_profile_logic.dart';
 
-class UserProfileView extends GetView<UserProfileLogic> {
-  const UserProfileView({super.key});
+class UserProfilePage extends GetView<UserProfileLogic> {
+  const UserProfilePage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text('UserProfile Page')),
-      body: const Center(child: Text('UserProfile View')),
+      body: const Center(child: Text('UserProfile Page')),
     );
   }
 }
