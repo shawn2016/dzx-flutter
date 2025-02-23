@@ -1,7 +1,7 @@
 /*
  * @Date: 2025-02-23 12:24:12
  * @LastEditors: shawn
- * @LastEditTime: 2025-02-23 20:47:50
+ * @LastEditTime: 2025-02-23 21:13:30
  */
 import * as vscode from "vscode";
 import * as path from "path";
@@ -61,8 +61,7 @@ class ${className}Logic extends GetxController {
 
 function getStateTemplate(pageName: string): string {
   const className = toPascalCase(pageName);
-  return `import 'package:get/get.dart';
-
+  return `
 class ${className}State {
   ${className}State() {
     ///Initialize variables
@@ -120,7 +119,6 @@ function getViewTemplate(pageName: string): string {
   return `import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '${pageName}_logic.dart';
-import '${pageName}_state.dart';
 
 class ${className}View extends GetView<${className}Logic> {
   const ${className}View({super.key});
